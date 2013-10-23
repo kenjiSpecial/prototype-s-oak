@@ -1,0 +1,233 @@
+@import "compass/reset";
+@import "compass/css3";
+
+// external file
+@import "font";
+
+$bgColor: rgb(22, 24, 19);
+$linkColor: rgb(186, 156, 121);
+
+body {
+  background: $bgColor;
+  color: $bgColor;
+  font-family: "Georgia", serif;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+}
+
+// --- load ---
+
+#load-cover {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background: $bgColor;
+  @include single-transition(all, .6s);
+
+}
+
+.ball {
+  @include single-transition(all, .4s);
+  &.loaded {
+    opacity: 0;
+  }
+}
+
+// --- main-wrapper ---
+
+#main-wrapper {
+  position: absolute;
+
+  #main-content {
+    position: relative;
+
+    #logo-img {
+      z-index: 2;
+
+      @include single-transition(all, 1.2s);
+      &.hover {
+        margin-top: -160px;
+      }
+    }
+
+    #link-wrapper {
+      z-index: 1;
+
+      position: absolute;
+      width: 225px;
+      opacity: 0;
+
+      @include transition-property(all);
+      @include transition-duration(2s);
+      @include transition-delay(0.5s);
+
+      &.hover {
+        opacity: 1;
+      }
+
+      .link-text {
+        width: 100%;
+        height: 80px;
+        overflow: hidden;
+
+        // hover state
+        &:hover {
+          .wrapper {
+            .bg {
+              height: 80px;
+            }
+
+            .content {
+              color: $linkColor;
+            }
+          }
+        }
+
+        // normal state
+        .wrapper {
+          position: relative;
+
+          .content {
+            padding: 20px 0;
+            width: 100%;
+
+            position: absolute;
+            color: $bgColor;
+
+            @include transition-property(all);
+            @include transition-duration(.3s);
+          }
+
+          .bg {
+            position: absolute;
+            width: 100%;
+            height: 0px;
+            background: $bgColor;
+
+            @include transition-property(all);
+            @include transition-duration(.6s);
+
+          }
+
+          a.cover {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 80px;
+          }
+
+        }
+
+        p {
+          width: 100%;
+          text-align: center;
+
+          &.main-title {
+            font-size: 28px;
+          }
+
+          &.sub-title {
+            font-size: 12px;
+          }
+
+        }
+
+        &.normal {
+          margin-top: -80px;
+        }
+
+        @include transition-property(all);
+        @include transition-duration(1s);
+        @include transition-delay(0.5s);
+
+        &.active {
+          margin-top: 0px;
+        }
+
+      }
+
+      .small-border {
+        width: 100%;
+        background: $bgColor;
+        height: 2px;
+      }
+
+      .large-border {
+        width: 100%;
+        background: $bgColor;
+        height: 8px;
+      }
+
+      .social {
+
+        text-align: center;
+
+        @include transition-property(all);
+        @include transition-duration(1s);
+        @include transition-delay(.6s);
+
+        &.normal {
+          margin-top: -30px;
+          opacity: 0;
+        }
+
+        &.active {
+          margin-top: 10px;
+          opacity: 1;
+        }
+
+        a {
+          text-decoration: none;
+          color: $bgColor;
+        }
+
+        .lsf, .lsf-icon:before {
+          font-family: 'LigatureSymbols';
+          -webkit-text-rendering: optimizeLegibility;
+          -moz-text-rendering: optimizeLegibility;
+          -ms-text-rendering: optimizeLegibility;
+          -o-text-rendering: optimizeLegibility;
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-font-smoothing: antialiased;
+          -ms-font-smoothing: antialiased;
+          -o-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+        }
+
+        .lsf-icon:before {
+          content: attr(title);
+          margin-right: 0.3em;
+          font-size: 180%;
+        }
+
+        .lsf-icon.facebook:before {
+          content: '\E047';
+        }
+
+        .lsf-icon.twitter:before {
+          content: '\E12f';
+        }
+
+        .lsf-icon.sound-cloud:before {
+          content: '\E17a';
+        }
+
+        .lsf-icon.mail:before {
+          content: '\E08a';
+        }
+
+      }
+
+    }
+
+  }
+}
+
+
