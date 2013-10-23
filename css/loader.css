@@ -1,0 +1,76 @@
+
+#spinner.active {
+    display: block;
+}
+#spinner {
+    display: none;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 40%;
+    left: 48%;
+    z-index: 1;
+}
+.ball {
+    position: absolute;
+    display: block;
+    background-color: #ffffff;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+#first {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.3, 0.9, 0.9);
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 12px 60px;
+    -moz-animation-timing-function: cubic-bezier(0.5, 0.3, 0.9, 0.9);
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 12px 60px;
+
+}
+#second {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.5, 0.9, 0.9);
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 12px 60px;
+    -moz-animation-timing-function: cubic-bezier(0.5, 0.5, 0.9, 0.9);
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 12px 60px;
+}
+#third {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.7, 0.9, 0.9);
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 12px 60px;
+    -moz-animation-timing-function: cubic-bezier(0.5, 0.7, 0.9, 0.9);
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 12px 60px;
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg) scale(1);
+    }
+    100% {
+        -webkit-transform: rotate(1440deg) scale(1);
+    }
+}​
+
+@-moz-keyframes rotate {
+    0% {
+        -moz-transform: rotate(0deg) scale(1);
+    }
+    100% {
+        -moz-transform: rotate(1440deg) scale(1);
+    }
+}
