@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="351df109-5b23-4180-8c58-3edd06036a1d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/fontello.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/fontello.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/fontello.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/fontello.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/ElegantIcons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/ElegantIcons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/ElegantIcons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/LigatureSymbols-2.11.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/LigatureSymbols-2.11.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/LigatureSymbols-2.11.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/LigatureSymbols-2.11.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/LigatureSymbols-2.11.woff" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/ElegantIcons.eot" afterPath="$PROJECT_DIR$/styles/_audio.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gruntfile.js" afterPath="$PROJECT_DIR$/../Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/_font.scss" afterPath="$PROJECT_DIR$/styles/_font.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/imageData.js" afterPath="$PROJECT_DIR$/scripts/imageData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/loader.css" afterPath="$PROJECT_DIR$/css/loader.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.js" afterPath="$PROJECT_DIR$/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.scss" afterPath="$PROJECT_DIR$/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/audio/Tawny.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/ElegantIcons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/ElegantIcons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/ElegantIcons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/ElegantIcons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/LigatureSymbols-2.11.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/LigatureSymbols-2.11.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/LigatureSymbols-2.11.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/LigatureSymbols-2.11.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/LigatureSymbols-2.11.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/scripts/4490ace1.main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/styles/09e18f52.main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="app.iws" />
@@ -81,7 +72,7 @@
           <file leaf-file-name="imageData.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/imageData.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="63" column="36" selection-start="1677" selection-end="1677" vertical-scroll-proportion="-0.93877554" vertical-offset="1635" max-vertical-offset="2370">
+                <state line="147" column="9" selection-start="3743" selection-end="3743" vertical-scroll-proportion="0.7755102" vertical-offset="1635" max-vertical-offset="2370">
                   <folding />
                 </state>
               </provider>
@@ -213,20 +204,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="audio" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -454,7 +431,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/imageData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="36" selection-start="1677" selection-end="1677" vertical-scroll-proportion="-0.93877554" vertical-offset="1635" max-vertical-offset="2370">
+        <state line="147" column="9" selection-start="3743" selection-end="3743" vertical-scroll-proportion="0.7755102" vertical-offset="1635" max-vertical-offset="2370">
           <folding />
         </state>
       </provider>
