@@ -12,35 +12,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SILENT OAK</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <!--<meta name="viewport" content="initial-scale = 0.6,maximum-scale = 0.6" />-->
+    <meta id="viewport" name="viewport">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="styles/1bf65a76.main.css">
+    <link rel="stylesheet" href="styles/48eef53b.main.css">
     <link rel="stylesheet" href="css/loader.css"/>
-    <script src="scripts/vendor/f7f27360.modernizr.js"></script>
-     <script>
-        var UA = navigator.userAgent;
-
-        Modernizr.addTest({
-
-            mobile         : function() { return /iPhone|iPad|iPod|Android|windows phone|iemobile|\bsilk\b/i.test(UA)},
-            phone          : function() { return /i(phone|pod)|android.+mobile|windows phone|iemobile/i.test(UA)},
-            tablet         : function() { return /ipad|android(?!.+mobile)|\bsilk\b/i.test(UA)},
-            ie9            : function() { return /msie 9/i.test(UA)},
-            safari5        : function() { return /version\/5\..+ safari/i.test(UA)},
-            ios            : function() { return /i(phone|pod|pad)/i.test(UA)},
-            safari         : function() { return /safari/i.test(UA) },
-            ipad           : function() { return /iPad/i.test(UA)},
-            webkit         : function() { return /webkit/i.test(UA)},
-            firefox        : function() { return /firefox/i.test(UA) },
-            chrome         : function() { return /chrome/i.test(UA) },
-            android        : function() { return /Android/i.test(UA)},
-            androidbrowser : function() { return /android(?!.+chrome)/i.test(UA)},
-            androidchrome  : function() { return /android.+chrome/i.test(UA)},
-            standalone     : function() { return !!navigator.standalone},
-        });
-
-        if(Modernizr.safari && Modernizr.chrome) Modernizr.safari = false;
-    </script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="scripts/modernizr-custom.js"></script>
+    <!-- endbuild -->
 </head>
 <body>
 <!--[if lt IE 10]>
@@ -85,9 +65,18 @@
                     </div>
 
                     <div class="content" id="title-tokyo">
-                        <p class="main-title"><a href="http://okaskateboards.com/" target="_blank">CHEERS TOKYO</a></p>
 
-                        <p class="sub-title"><a href="http://okaskateboards.com/" target="_blank">OKA Skateboards X Silent Oak</a></p>
+                        <div class="title" id="tokyo-title-text">
+
+                            <div class="title-content">
+                                <p class="main-title">CHEERS TOKYO</p>
+                                <p class="sub-title">OKA Skateboards X Silent Oak</p>
+                            </div>
+
+                            <div class="title-border"></div>
+
+                            <a class="cover" href="http://okaskateboards.com/" target="_blank"></a>
+                        </div>
 
                         <div class="audio" id="tokyo-audio-icon" audio-name="cheerTokyo">
                             <div class="icon-wrapper play">
@@ -106,6 +95,7 @@
             </div>
 
             <div class="small-border"></div>
+
             <div class="link-text normal link2">
                 <div class="wrapper">
 
@@ -117,10 +107,19 @@
                         <canvas id="audio-tawny"></canvas>
                     </div>
 
-                    <div class="content">
-                        <p class="main-title"><a href="http://laatry.com/saampler/" target="_blank">TAWNY</a></p>
+                    <div class="content" id="title-tawny">
 
-                        <p class="sub-title"><a href="http://laatry.com/saampler/" target="_blank">Laatry X Silent Oak</a></p>
+                        <div class="title" id="tawny-title-text">
+
+                            <div class="title-content">
+                                <p class="main-title">TAWNY</p>
+                                <p class="sub-title">Laatry X Silent Oak</p>
+                            </div>
+
+                            <div class="title-border"></div>
+
+                            <a class="cover" href="http://laatry.com/saampler/" target="_blank"></a>
+                        </div>
 
                         <div class="audio" id="tawny-audio-icon" audio-name="tawny">
                             <div class="icon-wrapper play">
@@ -130,6 +129,8 @@
                         </div>
 
                     </div>
+
+
 
                     <!--<a audio-name = "tawny" href="http://laatry.com/" class="cover" target="_blank">
 
@@ -171,6 +172,6 @@
     ga('send', 'pageview');
 </script>
 
-<script data-main="scripts/c06801c7.main" src="bower_components/requirejs/require.js"></script>
+<script data-main="scripts/9bb97b66.main" src="bower_components/requirejs/require.js"></script>
 </body>
 </html>
