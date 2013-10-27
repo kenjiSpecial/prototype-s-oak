@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2013 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="mail" unicode="&#xe806;" d="m30 586q-32 18-28 40q2 14 26 14l846 0q38 0 20-32q-8-14-24-22q-14-6-192-102t-182-98q-16-10-46-10q-28 0-46 10q-4 2-182 98t-192 102z m850-100q20 10 20-10l0-368q0-16-17-32t-33-16l-800 0q-16 0-33 16t-17 32l0 368q0 20 20 10l384-200q18-10 46-10t46 10z" horiz-adv-x="900" />
+<glyph glyph-name="play" unicode="&#xe803;" d="m486 376q14-10 14-26q0-14-14-24l-428-266q-24-16-41-6t-17 40l0 514q0 30 17 40t41-6z" horiz-adv-x="500" />
+<glyph glyph-name="stop" unicode="&#xe804;" d="m526 650q74 0 74-64l0-470q0-66-74-66l-450 0q-76 0-76 66l0 470q0 36 18 50t58 14l450 0z" horiz-adv-x="600" />
+<glyph glyph-name="pause" unicode="&#xe805;" d="m440 700q90 0 90-64l0-570q0-66-90-66t-90 66l0 570q0 64 90 64z m-350 0q90 0 90-64l0-570q0-66-90-66t-90 66l0 570q0 64 90 64z" horiz-adv-x="530" />
+<glyph glyph-name="twitter" unicode="&#xe801;" d="m920 636q-36-54-94-98l0-24q0-130-60-250t-186-203t-290-83q-160 0-290 84q14-2 46-2q132 0 234 80q-62 2-110 38t-66 94q10-4 34-4q26 0 50 6q-66 14-108 66t-42 120l0 2q36-20 84-24q-84 58-84 158q0 48 26 94q154-188 390-196q-6 18-6 42q0 78 55 133t135 55q82 0 136-58q60 12 120 44q-20-66-82-104q56 8 108 30z" horiz-adv-x="920" />
+<glyph glyph-name="facebook-squared" unicode="&#xe800;" d="m752 770q44 0 76-31t32-75l0-646q0-44-32-76t-76-32l-162 0l0 310l114 0l0 134l-114 0l0 70q0 30 28 30l86 0l0 152l-96 0q-74 0-124-54t-50-132l0-66l-104 0l0-134l104 0l0-310l-326 0q-44 0-76 32t-32 76l0 646q0 44 32 75t76 31l644 0z" horiz-adv-x="860" />
+<glyph glyph-name="soundcloud" unicode="&#xe802;" d="m34 178q0-4-10-4q-6 0-10 4l-14 70l14 72q4 4 10 4q10 0 10-4l16-72z m102-38q0-8-12-8t-12 8l-12 108l12 166q0 8 12 8t12-8l14-166z m102 2q0-10-14-10t-14 8l-10 108l10 222q0 10 14 10t14-10l12-222z m102 0q0-10-16-10t-16 10l-8 106l8 224q0 10 16 10t16-10l10-224z m102 2q0-12-18-12q-16 0-18 12l-6 104l6 256q4 14 18 14q18 0 18-14l8-256z m72-12q-14 0-14 14l0 396q0 10 12 14q36 14 84 14q88 0 153-58t73-142q24 10 50 10q52 0 90-37t38-87q0-52-38-89t-90-37z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
