@@ -205,8 +205,6 @@ define(
             },
 
             linkTextMouseEnter : function(e){
-
-                console.log($(e.currentTarget));
                 $(e.currentTarget).addClass("title-hover");
             },
 

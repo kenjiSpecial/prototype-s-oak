@@ -57,8 +57,6 @@ define([ 'jquery', 'jqueryBackstretch', 'mainEvent', 'bufferLoader','preloadjs',
 
             this.cheerTokyo =  bufferList[0];
             this.tawny      =  bufferList[1];
-            console.log(bufferList);
-            console.log("finishedLoadComplete");
 
             if(this.imageLoadDone && this.audioLoadDone){
 
@@ -69,7 +67,6 @@ define([ 'jquery', 'jqueryBackstretch', 'mainEvent', 'bufferLoader','preloadjs',
 
         loadComplete: function(){
             this.imageLoadDone = true;
-            console.log("loadComplete");
 
             if(this.imageLoadDone && this.audioLoadDone) {
 
