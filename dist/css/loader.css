@@ -14,7 +14,7 @@
 .ball {
     position: absolute;
     display: block;
-    background-color: #ffffff;
+    background-color: rgb(186, 156, 121);
     left: 40px;
     width: 20px;
     height: 20px;

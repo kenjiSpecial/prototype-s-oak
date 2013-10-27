@@ -21,6 +21,30 @@
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script>
+        var UA = navigator.userAgent;
+
+        Modernizr.addTest({
+
+            mobile         : function() { return /iPhone|iPad|iPod|Android|windows phone|iemobile|\bsilk\b/i.test(UA)},
+            phone          : function() { return /i(phone|pod)|android.+mobile|windows phone|iemobile/i.test(UA)},
+            tablet         : function() { return /ipad|android(?!.+mobile)|\bsilk\b/i.test(UA)},
+            ie9            : function() { return /msie 9/i.test(UA)},
+            safari5        : function() { return /version\/5\..+ safari/i.test(UA)},
+            ios            : function() { return /i(phone|pod|pad)/i.test(UA)},
+            safari         : function() { return /safari/i.test(UA) },
+            ipad           : function() { return /iPad/i.test(UA)},
+            webkit         : function() { return /webkit/i.test(UA)},
+            firefox        : function() { return /firefox/i.test(UA) },
+            chrome         : function() { return /chrome/i.test(UA) },
+            android        : function() { return /Android/i.test(UA)},
+            androidbrowser : function() { return /android(?!.+chrome)/i.test(UA)},
+            androidchrome  : function() { return /android.+chrome/i.test(UA)},
+            standalone     : function() { return !!navigator.standalone},
+        });
+
+        if(Modernizr.safari && Modernizr.chrome) Modernizr.safari = false;
+    </script>
     <!-- endbuild -->
 </head>
 <body>
@@ -36,6 +60,12 @@
         <span id="second" class="ball"></span>
         <span id="third" class="ball"></span>
     </div>
+
+    <div id="text">
+        <p id="load-text">Loading.</p>
+        <p id="dev-text">Developed by <a href="http://kenji-special.info/" target="_blank">Kenji Saito</a></p>
+    </div>
+
 </section>
 
 <!-- main wrapper -->
@@ -52,17 +82,30 @@
 
                 <div class="wrapper">
 
-                    <div class="bg"></div>
-
-                    <div class="content">
-                        <p class="main-title">CHEERS TOKYO</p>
-
-                        <p class="sub-title">OKA Skateboards X Silent Oak</p>
+                    <div class="bg">
                     </div>
 
-                    <a href="http://okaskateboards.com/" class="cover" target="_blank">
+                    <div class="canvas-bg">
+                        <canvas id="audio-tokyo"></canvas>
+                    </div>
 
-                    </a>
+                    <div class="content" id="title-tokyo">
+                        <p class="main-title"><a href="http://okaskateboards.com/" target="_blank">CHEERS TOKYO</a></p>
+
+                        <p class="sub-title"><a href="http://okaskateboards.com/" target="_blank">OKA Skateboards X Silent Oak</a></p>
+
+                        <div class="audio" id="tokyo-audio-icon" audio-name = "cheerTokyo">
+                            <div class="icon-wrapper play">
+                                <span class="icon-play" ></span>
+                                <span class="icon-pause" ></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--<a audio-name = "cheerTokyo" href="http://okaskateboards.com/" class="cover" target="_blank">
+
+                    </a>-->
 
                 </div>
             </div>
@@ -71,26 +114,40 @@
             <div class="link-text normal link2">
                 <div class="wrapper">
 
-                    <div class="bg"></div>
+                    <div class="bg">
 
-                    <div class="content">
-                        <p class="main-title">TAWNY</p>
-
-                        <p class="sub-title">Laatry X Silent Oak</p>
                     </div>
 
-                    <a href="http://laatry.com/" class="cover" target="_blank">
+                    <div class="canvas-bg">
+                        <canvas id="audio-tawny"></canvas>
+                    </div>
 
-                    </a>
+                    <div class="content" >
+                        <p class="main-title"><a href="http://laatry.com/saampler/" target="_blank">TAWNY</a></p>
+
+                        <p class="sub-title"><a href="http://laatry.com/saampler/" target="_blank">Laatry X Silent Oak</a></p>
+
+                        <div class="audio" id="tawny-audio-icon" audio-name = "tawny">
+                            <div class="icon-wrapper play">
+                                <span class="icon-play" ></span>
+                                <span class="icon-pause" ></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--<a audio-name = "tawny" href="http://laatry.com/" class="cover" target="_blank">
+
+                    </a>-->
 
                 </div>
             </div>
             <div class="large-border"></div>
             <div class="social normal">
-                <a href="http://twitter.com/silentoakmusic" class="lsf-icon twitter" target="_blank"></a>
-                <a href="http://facebook.com/silentoakmusic" class="lsf-icon facebook" target="_blank"></a>
-                <a href="http://soundcloud.com/silentoak/" class="lsf-icon sound-cloud" target="_blank"></a>
-                <a href="mailto:hello@silentoak.net?Subject=Hello" class="lsf-icon mail" target="_top"></a>
+                <a href="http://twitter.com/silentoakmusic" class="icon-twitter" target="_blank"></a>
+                <a href="http://facebook.com/silentoakmusic" class="icon-facebook-squared" target="_blank"></a>
+                <a href="http://soundcloud.com/silentoak/" class="icon-soundcloud" target="_blank"></a>
+                <a href="mailto:hello@silentoak.net?Subject=Hello" class="icon-mail" target="_top"></a>
             </div>
         </div>
 

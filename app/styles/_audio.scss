@@ -1,0 +1,231 @@
+$bgColor: rgb(22, 24, 19);
+$linkColor: rgb(186, 156, 121);
+
+$audioHeight: 75px;
+
+#link-wrapper {
+  z-index: 1;
+
+  position: absolute;
+  width: 225px;
+  opacity: 0;
+  margin-top: 1px;
+
+  @include transition-property(all);
+  @include transition-duration(1s);
+  @include transition-delay(0.5s);
+
+  &.hover {
+    opacity: 1;
+    @include transition-duration(1s);
+  }
+
+  // -------------
+  // audio
+  // -------------
+
+  .link-text {
+    width: 100%;
+    height: $audioHeight;
+    overflow: hidden;
+
+    // hover state
+    &.mouse-enter {
+      .wrapper {
+        .bg {
+          margin-top: 0;
+          height: $audioHeight;
+        }
+
+        .content {
+          color: $linkColor;
+
+          p {
+            a {
+              color: $linkColor;
+              text-decoration: none;
+            }
+          }
+
+        }
+
+        .audio {
+
+          opacity: 1;
+          width: 20px;
+          color: $linkColor;
+          @include transition-property(all);
+
+          @include transition-duration(.1s);
+          @include transition-delay(0.1s);
+
+        }
+
+      }
+
+    }
+
+    // normal state
+    .wrapper {
+      position: relative;
+
+      .audio {
+        position: absolute;
+        overflow: hidden;
+
+        height: 18px;
+
+        opacity: 0;
+        width: 0;
+        color: $bgColor;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        @include transition-property(all);
+
+        &.playingOut {
+          opacity: 1;
+          width: 20px;
+        }
+
+        &#tokyo-audio-icon {
+          margin-left: 10px;
+        }
+
+        &#tawny-audio-icon {
+          margin-left: 32px;
+        }
+
+        margin-top: -24px;
+
+        .icon-wrapper {
+          &.play {
+            margin-top: 0;
+            @include transition-duration(.3s);
+
+          }
+
+          &.stop {
+            margin-top: -18px;
+            @include transition-duration(.3s);
+          }
+
+        }
+
+      }
+
+      .content {
+        padding: 20px 0;
+        width: 100%;
+
+        position: absolute;
+        color: $bgColor;
+
+        @include transition-property(all);
+        @include transition-duration(.3s);
+
+      }
+
+      .bg {
+        position: absolute;
+        width: 100%;
+        margin-top: $audioHeight/2;
+        height: 0px;
+        background: $bgColor;
+
+        @include transition-property(all);
+        @include transition-duration(.6s);
+
+      }
+
+      .canvas-bg {
+        position: absolute;
+      }
+
+      a.cover {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: $audioHeight;
+      }
+
+    }
+
+    p {
+      width: 100%;
+      text-align: center;
+      a {
+        color: $bgColor;
+        text-decoration: none;
+      }
+
+      &.main-title {
+        font-size: 20px;
+
+      }
+
+      &.sub-title {
+        font-size: 11px;
+      }
+
+    }
+
+    &.normal {
+      margin-top: -1*$audioHeight;
+    }
+
+    @include transition-property(all);
+    @include transition-duration(1s);
+    @include transition-delay(0.5s);
+
+    &.active {
+      margin-top: 0px;
+    }
+
+  }
+
+  // -------------
+  // audio
+  // -------------
+
+  .small-border {
+    width: 100%;
+    background: $bgColor;
+    height: 2px;
+  }
+
+  .large-border {
+    width: 100%;
+    background: $bgColor;
+    height: 8px;
+  }
+
+  .social {
+
+    text-align: center;
+
+    @include transition-property(all);
+    @include transition-duration(1s);
+    @include transition-delay(.6s);
+
+    &.normal {
+      margin-top: -30px;
+      opacity: 0;
+    }
+
+    &.active {
+      margin-top: 10px;
+      opacity: 1;
+    }
+
+    a {
+      text-decoration: none;
+      color: $bgColor;
+    }
+
+  }
+
+}
+

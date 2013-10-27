@@ -14,14 +14,25 @@ require.config({
     }
 });
 
-require([ 'imageData', 'jquery', 'mainEvent'], function ( imageData, $, myEvent ) {
+require([ 'imageData', 'jquery', 'mainEvent', 'app'], function ( imageData, $, myEvent, app ) {
     'use strict';
 
+
+
     var $loadCover   = $('#load-cover');
+    var $spinner = $("#spinner");
+    var $loadText = $("#text");
+
 
     var $mainWrapper = $('#main-wrapper');
     var $logoImg     = $("#logo-img");
     var $linkWrapper = $("#link-wrapper");
+    var loadStatus = false;
+
+
+    if(Modernizr.firefox){
+        alert("Silent Oak recommend to use Google Chrome on PC.")
+    };
 
 
     loading();
@@ -35,16 +46,22 @@ require([ 'imageData', 'jquery', 'mainEvent'], function ( imageData, $, myEvent 
             top        : 0
         });
 
+        $spinner.css({
+            left: window.innerWidth/2 - 50,
+            top: window.innerHeight*0.45 - 50
+        });
+
         imageData.load();
     };
 
     myEvent.addListener( "loadComplete", loaded);
 
     function loaded(){
-
+        loadStatus = true;
         $(".ball").addClass("loaded");
-        $.backstretch('images/' + imageData.getBgImage().src );
+        $loadText.addClass("loaded");
 
+        $.backstretch('images/' + imageData.getBgImage().src );
 
 
 
@@ -66,6 +83,7 @@ require([ 'imageData', 'jquery', 'mainEvent'], function ( imageData, $, myEvent 
             $loadCover.css({
                 opacity: 0
             });
+
         }, 2200);
 
         $logoImg.append(imageData.getLogoImage());
@@ -86,16 +104,79 @@ require([ 'imageData', 'jquery', 'mainEvent'], function ( imageData, $, myEvent 
     }
 
     function hoverActive(){
-        $mainWrapper.hover(function(){
+        $mainWrapper.mouseenter(function(){
             $logoImg.addClass("hover");
             $linkWrapper.addClass("hover");
 
-            $(".link-text").removeClass("normal").addClass("active")
-            $(".social").removeClass("normal").addClass("active")
+            $(".link-text").removeClass("normal").addClass("active");
+            $(".social").removeClass("normal").addClass("active");
 
         });
+
+        $mainWrapper.mouseleave(function(){
+            $logoImg.removeClass("hover");
+            $linkWrapper.removeClass("hover");
+
+            $(".link-text").removeClass("active").addClass("normal");
+            $(".social").removeClass("active").addClass("normal");
+
+            app.mouseLeave()
+
+        });
+
+        app.init();
     }
 
+    $(window).resize(function(){
+
+        windowResize();
+
+    });
+
+    window.addEventListener('orientationchange', function(){
+
+        windowResize();
+
+    });
+
+    function windowResize(){
+
+        if(loadStatus){
+
+            $mainWrapper.css({
+                width      : 225,
+                height     : 225,
+                top        : (window.innerHeight - 225)/2,
+                left       : (window.innerWidth - 225)/2
+            });
+
+        }else{
+
+            $spinner.css({
+                left: window.innerWidth/2 - 50,
+                top: window.innerHeight*0.45 - 50
+            });
+
+            $loadCover.css({
+                width      : window.innerWidth,
+                height     : window.innerHeight,
+                left       : 0,
+                top        : 0
+            });
+
+        }
+
+    }
+
+    // -------
+    window.requestAnimFrame = (function(){
+        return  window.requestAnimationFrame       ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame    ||
+            function( callback ){
+                window.setTimeout(callback, 1000 / 60);
+            };
+    })();
 
 
 });
