@@ -1,7 +1,11 @@
 $bgColor: rgb(22, 24, 19);
 $linkColor: rgb(186, 156, 121);
 
-$audioHeight: 75px;
+$audioHeight : 75px;
+
+$titleTokyoWidth : 155px;
+$titleTawnyWidth : 100px;
+$titleHeight     : 38px;
 
 #link-wrapper {
   z-index: 1;
@@ -47,7 +51,28 @@ $audioHeight: 75px;
             }
           }
 
+
+
         }
+
+        div.title{
+          div.title-content{
+
+            .main-title {
+              color: $linkColor;
+            }
+
+            .sub-title {
+              color: $linkColor;
+            }
+
+          }
+
+          a.cover{
+          }
+        }
+
+
 
         .audio {
 
@@ -98,7 +123,7 @@ $audioHeight: 75px;
           margin-left: 32px;
         }
 
-        margin-top: -24px;
+        margin-top: -27px;
 
         .icon-wrapper {
           &.play {
@@ -117,7 +142,7 @@ $audioHeight: 75px;
       }
 
       .content {
-        padding: 20px 0;
+        padding: 16px 0;
         width: 100%;
 
         position: absolute;
@@ -125,6 +150,85 @@ $audioHeight: 75px;
 
         @include transition-property(all);
         @include transition-duration(.3s);
+
+        div.title{
+          position: relative;
+
+          margin: auto;
+          overflow: hidden;
+
+          &#tokyo-title-text{
+            width: $titleTokyoWidth;
+            height: $titleHeight;
+          }
+
+          &#tawny-title-text{
+            width: $titleTawnyWidth;
+            height: $titleHeight;
+          }
+
+          &.title-hover{
+            div.title-content{
+              top  : 0px;
+            }
+
+            div.title-border{
+              width: 100%;
+              opacity: 1;
+              height: 1px;
+            }
+          }
+
+          div.title-content{
+
+            position: absolute;
+            top  : 5px;
+            left : 0;
+
+            @include transition-property(all);
+            @include transition-duration(.5s);
+
+            p {
+              width: 100%;
+              text-align: center;
+              color: $bgColor;
+
+
+              &.main-title {
+                font-size: 20px;
+
+              }
+
+              &.sub-title {
+                font-size: 11px;
+              }
+
+            }
+          }
+
+          div.title-border{
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            background: $linkColor;
+
+            @include transition-property(all);
+            @include transition-duration(1s);
+          }
+
+          a.cover{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: $titleHeight;
+            top  : 0;
+            left : 0;
+          }
+
+        }
 
       }
 
@@ -144,33 +248,9 @@ $audioHeight: 75px;
         position: absolute;
       }
 
-      a.cover {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: $audioHeight;
-      }
 
     }
 
-    p {
-      width: 100%;
-      text-align: center;
-      a {
-        color: $bgColor;
-        text-decoration: none;
-      }
-
-      &.main-title {
-        font-size: 20px;
-
-      }
-
-      &.sub-title {
-        font-size: 11px;
-      }
-
-    }
 
     &.normal {
       margin-top: -1*$audioHeight;
@@ -199,6 +279,7 @@ $audioHeight: 75px;
   .large-border {
     width: 100%;
     background: $bgColor;
+    margin-top: 1px;
     height: 8px;
   }
 

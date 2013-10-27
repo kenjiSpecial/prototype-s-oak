@@ -16,8 +16,11 @@ define(
             }
 
 
-            this.$el.delegate(".link-text", "mouseenter", _.bind(this.linkTextMouseEnter, this));
-            this.$el.delegate(".link-text", "mouseleave", _.bind(this.linkTextMouseLeave, this));
+            this.$el.delegate(".link-text", "mouseenter", _.bind(this.audioContentMouseEnter, this));
+            this.$el.delegate(".link-text", "mouseleave", _.bind(this.audioContentMouseLeave, this));
+
+            this.$el.delegate(".title", "mouseenter", _.bind(this.linkTextMouseEnter, this));
+            this.$el.delegate(".title", "mouseleave", _.bind(this.linkTextMouseLeave, this));
 
 
             this.playStatus = {cheerTokyo: false, tawny: false};
@@ -36,7 +39,7 @@ define(
             this.audioTawnyCanvas.height = this.canvasSize.height;
             this.audioTawnyContext = this.audioTawnyCanvas.getContext("2d");
 
-            this.audioPlayerData = {width: 200, height: 1, top: 60, left: 25 / 2};
+            this.audioPlayerData = {width: 200, height: 1, top: 63, left: 25 / 2};
 
             this.playLoopHandler = _.bind(this.playLoop, this);
 
@@ -70,7 +73,6 @@ define(
 
                     // stop
                     data.stopAudio();
-                    this.playStatus[audioName] = false;
                     this.playStatus = false;
 
                     $target.find(".icon-wrapper").removeClass("stop").addClass("play");
@@ -123,7 +125,15 @@ define(
             playLoop: function () {
 
                 this.currentContext.clearRect(0, 0, this.canvasSize.width, this.canvasSize.height);
+                var audioRate = data.getCurrentAudioRate();
 
+                if(audioRate >= 1){
+                    this.playStatus = false;
+                    data.stopAudio();
+
+
+                    this.$el.find(".icon-wrapper").removeClass("stop").addClass("play");
+                }
 
                 if (this.playStatus) {
 
@@ -141,7 +151,7 @@ define(
 
             },
 
-            linkTextMouseEnter: function (event) {
+            audioContentMouseEnter: function (event) {
 
                 if (Modernizr.ios || Modernizr.android) {
 
@@ -152,15 +162,15 @@ define(
                 $currentTarget.addClass("mouse-enter");
 
 
-                //var audioName =  $currentTarget.find(".audio").attr("audio-name");
+                var audioName =  $currentTarget.find(".audio").attr("audio-name");
 
 
-                if (this.playStatus) {
+                if ( this.playStatus && audioName == this.currentAudio) {
                     $currentTarget.find('.audio').removeClass("playingOut");
                 }
             },
 
-            linkTextMouseLeave: function (event) {
+            audioContentMouseLeave: function (event) {
 
                 if (Modernizr.ios || Modernizr.android) {
                     return;
@@ -169,8 +179,9 @@ define(
                 var $currentTarget = $(event.currentTarget);
                 $currentTarget.removeClass("mouse-enter");
 
+                var audioName =  $currentTarget.find(".audio").attr("audio-name");
 
-                if (this.playStatus) {
+                if ( this.playStatus && audioName == this.currentAudio ) {
                     $currentTarget.find('.audio').addClass("playingOut");
                 }
             },
@@ -191,6 +202,16 @@ define(
                     });
 
                 }
+            },
+
+            linkTextMouseEnter : function(e){
+
+                console.log($(e.currentTarget));
+                $(e.currentTarget).addClass("title-hover");
+            },
+
+            linkTextMouseLeave : function(e){
+                $(e.currentTarget).removeClass("title-hover");
             }
 
         }
