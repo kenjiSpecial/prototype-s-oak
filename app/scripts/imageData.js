@@ -50,10 +50,6 @@ define([ 'jquery', 'jqueryBackstretch', 'mainEvent', 'bufferLoader','preloadjs',
                 this.audioLoadDone = true;
             }
 
-
-
-
-
         },
 
         finishedLoadComplete: function(bufferList){
