@@ -15,11 +15,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/scripts/4490ace1.main.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/scripts/6bd6f357.main.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/styles/09e18f52.main.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../dist/index.html" afterPath="$PROJECT_DIR$/../dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/loader.css" afterPath="$PROJECT_DIR$/css/loader.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../dist/css/loader.css" afterPath="$PROJECT_DIR$/../dist/css/loader.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.js" afterPath="$PROJECT_DIR$/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +51,7 @@
           <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="4" selection-start="666" selection-end="712" vertical-scroll-proportion="0.21653543" vertical-offset="105" max-vertical-offset="2895">
+                <state line="17" column="4" selection-start="615" selection-end="661" vertical-scroll-proportion="0.19685039" vertical-offset="105" max-vertical-offset="2895">
                   <folding>
                     <marker date="1382846072000" expanded="true" signature="2341:2494" placeholder="..." />
                     <marker date="1382846072000" expanded="true" signature="2434:2462" placeholder="..." />
@@ -458,7 +453,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4" selection-start="666" selection-end="712" vertical-scroll-proportion="0.21653543" vertical-offset="105" max-vertical-offset="2895">
+        <state line="17" column="4" selection-start="615" selection-end="661" vertical-scroll-proportion="0.19685039" vertical-offset="105" max-vertical-offset="2895">
           <folding>
             <marker date="1382846072000" expanded="true" signature="2341:2494" placeholder="..." />
             <marker date="1382846072000" expanded="true" signature="2434:2462" placeholder="..." />
