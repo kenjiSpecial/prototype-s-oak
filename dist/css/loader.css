@@ -7,8 +7,10 @@
     position: absolute;
     height: 100px;
     width: 100px;
-    top: 40%;
-    left: 48%;
+    margin-left: -50px;
+    margin-top: -50px;
+    top: 45%;
+    left: 50%;
     z-index: 1;
 }
 .ball {

@@ -46,10 +46,7 @@ require([ 'imageData', 'jquery', 'mainEvent', 'app'], function ( imageData, $, m
             top        : 0
         });
 
-        $spinner.css({
-            left: window.innerWidth/2 - 50,
-            top: window.innerHeight*0.45 - 50
-        });
+
 
         imageData.load();
     };
@@ -152,11 +149,6 @@ require([ 'imageData', 'jquery', 'mainEvent', 'app'], function ( imageData, $, m
 
         }else{
 
-            $spinner.css({
-                left: window.innerWidth/2 - 50,
-                top: window.innerHeight*0.45 - 50
-            });
-
             $loadCover.css({
                 width      : window.innerWidth,
                 height     : window.innerHeight,
@@ -177,6 +169,8 @@ require([ 'imageData', 'jquery', 'mainEvent', 'app'], function ( imageData, $, m
                 window.setTimeout(callback, 1000 / 60);
             };
     })();
+
+
 
 
 });
