@@ -3,8 +3,8 @@ $linkColor: rgb(186, 156, 121);
 
 $audioHeight : 75px;
 
-$titleTokyoWidth : 155px;
-$titleTawnyWidth : 100px;
+$titleTokyoWidth : 160px;
+$titleTawnyWidth : 105px;
 $titleHeight     : 38px;
 
 #link-wrapper {
@@ -59,10 +59,12 @@ $titleHeight     : 38px;
           div.title-content{
 
             .main-title {
+
               color: $linkColor;
             }
 
             .sub-title {
+
               color: $linkColor;
             }
 
@@ -120,7 +122,7 @@ $titleHeight     : 38px;
         }
 
         &#tawny-audio-icon {
-          margin-left: 32px;
+          margin-left: 37px;
         }
 
         margin-top: -27px;
@@ -176,7 +178,7 @@ $titleHeight     : 38px;
               width: 100%;
               margin-left: 0;
               opacity: 1;
-              height: 1px;
+
             }
           }
 
@@ -185,6 +187,8 @@ $titleHeight     : 38px;
             position: absolute;
             top  : 0;
             left : 0;
+
+            width: 100%;
 
             @include transition-property(all);
             @include transition-duration(.5s);
@@ -201,7 +205,8 @@ $titleHeight     : 38px;
               }
 
               &.sub-title {
-                font-size: 11px;
+                text-align: center;
+                font-size: 10px;
               }
 
             }
@@ -209,11 +214,11 @@ $titleHeight     : 38px;
 
           div.title-border{
             position: absolute;
-            bottom: 1px;
+            bottom: 2px;
             margin-left: 50%;
             left: 0;
             width: 0;
-            height: 0;
+            height: 1px;
             opacity: 0;
             background: $linkColor;
 
@@ -306,6 +311,7 @@ $titleHeight     : 38px;
     a {
       text-decoration: none;
       color: $bgColor;
+      display:inline-block;
     }
 
   }
