@@ -68,7 +68,14 @@ $titleHeight     : 38px;
               color: $linkColor;
             }
 
+
+
           }
+
+          div.title-border{
+            background: $linkColor !important;
+          }
+
 
           a.cover{
           }
@@ -220,7 +227,7 @@ $titleHeight     : 38px;
             width: 0;
             height: 1px;
             opacity: 0;
-            background: $linkColor;
+            background: $bgColor;
 
             @include transition-property(all);
             @include transition-duration(.5s);

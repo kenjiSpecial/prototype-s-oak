@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="351df109-5b23-4180-8c58-3edd06036a1d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/thumbnail.jpg" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/audio/Tawny.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/favicon.ico" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/ElegantIcons.eot" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/ElegantIcons.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/fonts/ElegantIcons.ttf" afterPath="" />
@@ -18,11 +18,19 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/scripts/9bb97b66.main.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/scripts/c06801c7.main.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/scripts/vendor/f7f27360.modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/styles/04fe1884.main.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/styles/09e18f52.main.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/styles/1bf65a76.main.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../dist/styles/48eef53b.main.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/modernizr-custom.js" afterPath="$PROJECT_DIR$/js/modernizr-custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../dist/audio/CheersTokyo.mp3" afterPath="$PROJECT_DIR$/../dist/audio/CheersTokyo.mp3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../dist/audio/Tawny.mp3" afterPath="$PROJECT_DIR$/../dist/audio/Tawny.mp3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/_audio.scss" afterPath="$PROJECT_DIR$/styles/_audio.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/app.js" afterPath="$PROJECT_DIR$/scripts/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../dist/index.html" afterPath="$PROJECT_DIR$/../dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/loader.css" afterPath="$PROJECT_DIR$/css/loader.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.js" afterPath="$PROJECT_DIR$/scripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="app.iws" />
@@ -51,28 +59,28 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="172" column="0" selection-start="4075" selection-end="4075" vertical-scroll-proportion="0.0" vertical-offset="519" max-vertical-offset="2730">
+                <state line="51" column="25" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="2745">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="80" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.84024894" vertical-offset="30" max-vertical-offset="2985">
+                <state line="25" column="4" selection-start="943" selection-end="943" vertical-scroll-proportion="0.62240666" vertical-offset="75" max-vertical-offset="2985">
                   <folding>
-                    <marker date="1383017265000" expanded="true" signature="1265:1418" placeholder="..." />
-                    <marker date="1383017265000" expanded="true" signature="1358:1386" placeholder="..." />
+                    <marker date="1383048211000" expanded="true" signature="1260:1413" placeholder="..." />
+                    <marker date="1383048211000" expanded="true" signature="1353:1381" placeholder="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="modernizr-custom.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/modernizr-custom.js">
+          <file leaf-file-name="loader.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/loader.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="50" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="540">
+                <state line="4" column="8" selection-start="42" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
                   <folding />
                 </state>
               </provider>
@@ -81,7 +89,7 @@
           <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="206" column="45" selection-start="7104" selection-end="7104" vertical-scroll-proportion="0.0" vertical-offset="2604" max-vertical-offset="3390">
+                <state line="155" column="21" selection-start="5545" selection-end="5545" vertical-scroll-proportion="0.0" vertical-offset="2454" max-vertical-offset="3390">
                   <folding />
                 </state>
               </provider>
@@ -90,7 +98,7 @@
           <file leaf-file-name="imageData.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/imageData.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="59" column="0" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="2265">
+                <state line="59" column="0" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="2265">
                   <folding />
                 </state>
               </provider>
@@ -100,10 +108,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_audio.scss" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="_audio.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/_audio.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="124" column="25" selection-start="1931" selection-end="1931" vertical-scroll-proportion="0.45957446" vertical-offset="1644" max-vertical-offset="4890">
+                <state line="75" column="46" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.5212766" vertical-offset="880" max-vertical-offset="4995">
                   <folding />
                 </state>
               </provider>
@@ -112,7 +120,7 @@
           <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="16" selection-start="366" selection-end="368" vertical-scroll-proportion="-3.1836734" vertical-offset="234" max-vertical-offset="2835">
+                <state line="26" column="16" selection-start="366" selection-end="368" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="2835">
                   <folding />
                 </state>
               </provider>
@@ -132,6 +140,9 @@
       <command text="grunt server" />
       <command text="git add ." />
       <command text="git commit -m &quot;changed the link color and animation.&quot;" />
+      <command text="git add ." />
+      <command text="git commit -m &quot;update the status.&quot;" />
+      <command text="git push" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -153,14 +164,14 @@
         <option value="$PROJECT_DIR$/styles/_font.scss" />
         <option value="$PROJECT_DIR$/styles/_keyframe.css" />
         <option value="$PROJECT_DIR$/styles/_keyframe.scss" />
-        <option value="$PROJECT_DIR$/css/loader.css" />
-        <option value="$PROJECT_DIR$/scripts/main.js" />
         <option value="$PROJECT_DIR$/styles/main.scss" />
         <option value="$PROJECT_DIR$/scripts/modernizr-custom.js" />
-        <option value="$PROJECT_DIR$/scripts/app.js" />
         <option value="$PROJECT_DIR$/scripts/imageData.js" />
-        <option value="$PROJECT_DIR$/styles/_audio.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/loader.css" />
+        <option value="$PROJECT_DIR$/scripts/app.js" />
+        <option value="$PROJECT_DIR$/scripts/main.js" />
+        <option value="$PROJECT_DIR$/styles/_audio.scss" />
       </list>
     </option>
   </component>
@@ -250,6 +261,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -278,8 +303,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -289,10 +314,19 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -301,14 +335,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -355,10 +381,10 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33857316" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33857316" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.269375" sideWeight="0.66142684" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.269375" sideWeight="0.66142684" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -371,7 +397,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3491656" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36970475" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -423,26 +449,14 @@
         <state line="41" column="13" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.7251908" vertical-offset="45" max-vertical-offset="945" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/loader.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0794702" vertical-offset="0" max-vertical-offset="1245" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/mainEvent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="3" selection-start="129" selection-end="129" vertical-scroll-proportion="0.1126408" vertical-offset="0" max-vertical-offset="799" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/modernizr-custom.js">
+    <entry file="file://$PROJECT_DIR$/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="50" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="45" selection-start="7104" selection-end="7104" vertical-scroll-proportion="0.0" vertical-offset="2604" max-vertical-offset="3390">
+        <state line="26" column="16" selection-start="366" selection-end="368" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="2835">
           <folding />
         </state>
       </provider>
@@ -454,34 +468,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/modernizr-custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="13" selection-start="1633" selection-end="1633" vertical-scroll-proportion="0.93167704" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/loader.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="8" selection-start="42" selection-end="49" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="21" selection-start="5545" selection-end="5545" vertical-scroll-proportion="0.0" vertical-offset="2454" max-vertical-offset="3390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="0" selection-start="4075" selection-end="4075" vertical-scroll-proportion="0.0" vertical-offset="519" max-vertical-offset="2730">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="16" selection-start="366" selection-end="368" vertical-scroll-proportion="-3.1836734" vertical-offset="234" max-vertical-offset="2835">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/_audio.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="25" selection-start="1931" selection-end="1931" vertical-scroll-proportion="0.45957446" vertical-offset="1644" max-vertical-offset="4890">
+        <state line="51" column="25" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="2745">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="80" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.84024894" vertical-offset="30" max-vertical-offset="2985">
+        <state line="25" column="4" selection-start="943" selection-end="943" vertical-scroll-proportion="0.62240666" vertical-offset="75" max-vertical-offset="2985">
           <folding>
-            <marker date="1383017265000" expanded="true" signature="1265:1418" placeholder="..." />
-            <marker date="1383017265000" expanded="true" signature="1358:1386" placeholder="..." />
+            <marker date="1383048211000" expanded="true" signature="1260:1413" placeholder="..." />
+            <marker date="1383048211000" expanded="true" signature="1353:1381" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/_audio.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="46" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.5212766" vertical-offset="880" max-vertical-offset="4995">
+          <folding />
         </state>
       </provider>
     </entry>

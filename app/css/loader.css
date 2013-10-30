@@ -34,6 +34,8 @@
     -moz-animation-iteration-count: infinite;
     -moz-transform-origin: 12px 60px;
 
+    /*-moz-animation: rotate 2s linear 0 infinite normal;*/
+
 }
 #second {
     -webkit-animation-timing-function: cubic-bezier(0.5, 0.5, 0.9, 0.9);
@@ -46,6 +48,8 @@
     -moz-animation-duration: 2s;
     -moz-animation-iteration-count: infinite;
     -moz-transform-origin: 12px 60px;
+
+    /*-moz-animation: rotate 2s linear 0 infinite normal;*/
 }
 #third {
     -webkit-animation-timing-function: cubic-bezier(0.5, 0.7, 0.9, 0.9);

@@ -31,7 +31,8 @@ require([ 'imageData', 'jquery', 'mainEvent', 'app'], function ( imageData, $, m
 
 
     if(Modernizr.firefox){
-        alert("Silent Oak recommend to use Google Chrome on PC.")
+        $("#spinner").css("display", "none");
+        alert("I Recommend to use Google Chrome on PC.")
     };
 
 

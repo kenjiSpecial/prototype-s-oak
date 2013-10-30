@@ -153,7 +153,7 @@ define(
 
             audioContentMouseEnter: function (event) {
 
-                if (Modernizr.ios || Modernizr.android) {
+                if ( Modernizr.ios || Modernizr.android || Modernizr.firefox ) {
 
                     return;
                 }
@@ -172,7 +172,7 @@ define(
 
             audioContentMouseLeave: function (event) {
 
-                if (Modernizr.ios || Modernizr.android) {
+                if (Modernizr.ios || Modernizr.android || Modernizr.firefox) {
                     return;
                 }
 
